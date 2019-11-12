@@ -3,29 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Lab06</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <title>Lab06</title>
 </head>
-<style>
-    #search {
-        background: #1594e5;
-        color: #fff;
-        font-family: calibri;
-        display: block;
-        width: 140px;
-        text-transform: uppercase;
-        padding: 10px;
-        text-align: center;
-        margin: 20px auto;
-        cursor: pointer;
-    }
-</style>
 
 <body>
 
+    <div class="title">
+        <h1>Avengers Character Search</h1>
+    </div>
+    <div class="container">
+        <div class="op">
+            <h3 id="head3">Search by Full Name or Alias</h3>
+            <input id="search-bar" name="search_text" type="text" placeholder="e.g Captin America or Steve Rogers">
+            <input onclick="getValue() " type="submit" value="submit" id="search-btn"></input>
+        </div>
+        <div id="res">
 
-    <a id="search">SEARCH</a>
+            <h2 id="ht">RESULT</h2>
+            <p id="result"></p>
+            <hr>
+        </div>
+    </div>
 
-    <script src="app.js"></script>
+
+
 </body>
 
 </html>
